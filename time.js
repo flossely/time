@@ -1,22 +1,22 @@
 $(document).ready(function()
 {
-   setInterval(serverTime, 1000);
-   setInterval(clientTime, 1000);
+   setInterval(servertime, 1000);
+   setInterval(clienttime, 1000);
 });
-function serverTime()
+function servertime()
 {
   $.ajax({
     url: 'time.php',
     success: function(data) {
-       $('#serverTime').val(data);
+       $('#servertime').val(data);
     },
   });
 }
-function clientTime() {
+function clienttime() {
   var now = new Date();
   var hour = now.getHours();
   var minute = now.getMinutes();
   var second = now.getSeconds();
   var datetime = hour + ':' + minute + ':' + second;
-  document.getElementById('clientTime').innerText = datetime;
+  document.getElementById('clienttime').innerText = datetime;
 }
