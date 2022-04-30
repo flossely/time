@@ -15,4 +15,4 @@ if (file_exists('format')) {
 }
 
 date_default_timezone_set($timezone);
-echo $ct = date($timeformat);
+echo $servertime = date($timeformat);
