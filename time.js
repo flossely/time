@@ -18,6 +18,21 @@ function clienttime() {
   var hour = now.getHours();
   var minute = now.getMinutes();
   var second = now.getSeconds();
-  var datetime = hour + ':' + minute + ':' + second;
+  if (hour.length > 1) {
+    hours = '0' + hour;
+  } else {
+    hours = hour;
+  }
+  if (minute.length > 1) {
+    minutes = '0' + minute;
+  } else {
+    minutes = minute;
+  }
+  if (second.length > 1) {
+    seconds = '0' + second;
+  } else {
+    seconds = minute;
+  }
+  var datetime = hours + ':' + minutes + ':' + seconds;
   document.getElementById('clienttime').innerText = datetime;
 }
