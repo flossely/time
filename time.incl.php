@@ -1,0 +1,1 @@
+<script src="clock.js?rev=<?=time();?>"></script>
