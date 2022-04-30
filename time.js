@@ -28,7 +28,7 @@ function clienttime() {
   } else {
     minutes = minute;
   }
-  if (second.toString().length > 3) {
+  if (second.toString().length > 1) {
     seconds = '0' + second;
   } else {
     seconds = second;
