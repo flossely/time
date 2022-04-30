@@ -15,9 +15,22 @@ function servertime()
 }
 function clienttime() {
   var now = new Date();
+  var date = now.getDate();
+  var month = now.getMonth() + 1;
+  var year = now.getFullYear();
   var hour = now.getHours();
   var minute = now.getMinutes();
   var second = now.getSeconds();
+  if (date.toString().length < 2) {
+    day = '0' + date;
+  } else {
+    day = date;
+  }
+  if (month.toString().length < 2) {
+    months = '0' + month;
+  } else {
+    months = month;
+  }
   if (hour.toString().length < 2) {
     hours = '0' + hour;
   } else {
@@ -33,6 +46,6 @@ function clienttime() {
   } else {
     seconds = second;
   }
-  var datetime = hours + ':' + minutes + ':' + seconds;
+  var datetime = day + '' + months + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
   document.getElementById('clienttime').innerText = datetime;
 }
