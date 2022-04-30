@@ -46,6 +46,6 @@ function clienttime() {
   } else {
     seconds = second;
   }
-  var datetime = day + '' + months + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
+  var datetime = day + '/' + months + '/' + year + ' ' + hours + ':' + minutes + ':' + seconds;
   document.getElementById('clienttime').innerText = datetime;
 }
