@@ -9,6 +9,7 @@ function servertime()
     url: 'time.php',
     success: function(data) {
        $('#servertime').val(data);
+       document.getElementById('servertime').innerText = data;
     },
   });
 }
