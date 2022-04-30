@@ -18,17 +18,17 @@ function clienttime() {
   var hour = now.getHours();
   var minute = now.getMinutes();
   var second = now.getSeconds();
-  if (hour.toString('').length > 1) {
+  if (hour.toString().length > 1) {
     hours = '0' + hour;
   } else {
     hours = hour;
   }
-  if (minute.toString('').length > 1) {
+  if (minute.toString().length > 1) {
     minutes = '0' + minute;
   } else {
     minutes = minute;
   }
-  if (second.toString('').length > 1) {
+  if (second.toString().length > 1) {
     seconds = '0' + second;
   } else {
     seconds = second;
