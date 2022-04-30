@@ -15,8 +15,8 @@ function servertime()
 }
 function clienttime() {
   var now = new Date();
-  var date = now.getDate();
-  var month = now.getMonth() + 1;
+  var date = now.getDate() + 1;
+  var month = now.getMonth() + 2;
   var year = now.getFullYear();
   var hour = now.getHours();
   var minute = now.getMinutes();
