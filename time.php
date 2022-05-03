@@ -9,9 +9,9 @@ if (file_exists('timezone')) {
 
 if (file_exists('format')) {
     $timeformatFile = file_get_contents('format');
-    $timeformat = ($timeformatFile != '') ? $timeformatFile : 'd/m/Y H:i:s';
+    $timeformat = ($timeformatFile != '') ? $timeformatFile : 'j/n/Y G:i';
 } else {
-    $timeformat = 'd/m/Y H:i:s';
+    $timeformat = 'j/n/Y G:i';
 }
 
 date_default_timezone_set($timezone);
