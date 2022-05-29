@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-   setInterval(time, 1000);
+   setInterval(tick, 1000);
 });
 function tick()
 {
